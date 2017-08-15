@@ -55,10 +55,6 @@ class CustomView: UIView, CAAnimationDelegate {
 		progress_background.fillColor     = nil
 		progress_background.strokeColor   = UIColor(red:0.992, green: 0.718, blue:0.306, alpha:1).cgColor
 		progress_background.lineWidth     = 10
-		progress_background.shadowColor   = UIColor(red:0, green: 0, blue:0, alpha:0.955).cgColor
-		progress_background.shadowOpacity = 0.96
-		progress_background.shadowOffset  = CGSize(width: 0, height: -0)
-		progress_background.shadowRadius  = 4
 		progress_background.path          = progress_backgroundPath().cgPath
 		Round.addSublayer(progress_background)
 		layers["progress_background"] = progress_background
@@ -67,10 +63,6 @@ class CustomView: UIView, CAAnimationDelegate {
 		background.lineCap       = kCALineCapRound
 		background.fillColor     = UIColor(red:0.341, green: 0.408, blue:0.69, alpha:1).cgColor
 		background.strokeColor   = UIColor(red:0.341, green: 0.408, blue:0.588, alpha:1).cgColor
-		background.shadowColor   = UIColor(red:0, green: 0, blue:0, alpha:0.33).cgColor
-		background.shadowOpacity = 0.33
-		background.shadowOffset  = CGSize(width: 100, height: 100)
-		background.shadowRadius  = 400
 		background.path          = backgroundPath().cgPath
 		Round.addSublayer(background)
 		layers["background"] = background
